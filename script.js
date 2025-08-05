@@ -4,6 +4,7 @@ let startButton;
 let bg1;
 let skipButton;
 let screen=0;
+let bg2;
 
 /* PRELOAD LOADS FILES */
 function preload(){
@@ -18,11 +19,11 @@ function setup() {
 
   //Create Buttons
   startButton=new Sprite(205,325);
-  skipButton = new Sprite(350,380)
+  skipButton = new Sprite(350,380);
 
   //Resizes
-  bg1.resize(400,400)
-  bg2.resize(400,400)
+  bg1.resize(400,400);
+  bg2.resize(400,400);
 
 }
 
@@ -34,11 +35,10 @@ function draw() {
   startButton.collider="k";
   startButton.color="#0c6b68ff";
   startButton.text="Press to Start";
-  image(bg1,0,0)
+  image(bg1,0,0);
 
   // Check start button
   if (startButton.mouse.presses()){
-    //print("press");
     showScreen1();
     screen=1;
   }
@@ -47,7 +47,7 @@ function draw() {
 
 /* FUNCTIONS */
 function showScreen1(){
-  background(bg2);
+  background(bg2,0,0);
   startButton.pos={x:-100, y:-100};
   // Add skip button
   skipButton.w=100;
