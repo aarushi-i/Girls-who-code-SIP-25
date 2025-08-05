@@ -39,15 +39,16 @@ function draw() {
 
   // Check start button
   if (startButton.mouse.presses()){
-    showScreen1();
     screen=1;
+  } else if (screen==1){
+    showScreen1()
   }
   
 }
 
 /* FUNCTIONS */
 function showScreen1(){
-  background(bg2,0,0);
+  image(bg2,0,0);
   startButton.pos={x:-100, y:-100};
   // Add skip button
   skipButton.w=100;
