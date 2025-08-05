@@ -2,19 +2,27 @@
 
 let startButton;
 let bg1;
+let skipButton;
+let screen=0;
 
 /* PRELOAD LOADS FILES */
 function preload(){
   //Load enter screen 
   bg1=loadImage("assets/Welcome to Escape.png");
+  bg2=loadImage("assets/Welcome to Escape(1).png");
 }
 
 /* SETUP RUNS ONCE */
 function setup() {
   createCanvas(400,400);
 
-  //Create start Button
+  //Create Buttons
   startButton=new Sprite(205,325);
+  skipButton = new Sprite(350,380)
+
+  //Resizes
+  bg1.resize(400,400)
+  bg2.resize(400,400)
 
 }
 
@@ -27,19 +35,24 @@ function draw() {
   startButton.color="#0c6b68ff";
   startButton.text="Press to Start";
   image(bg1,0,0)
+
+  // Check start button
+  if (startButton.mouse.presses()){
+    //print("press");
+    showScreen1();
+    screen=1;
+  }
+  
 }
 
 /* FUNCTIONS */
-function startScreen{
-  background("pink");
-  enterButton.pos={x:-100, y:-100};
-  fill('white');
-  text("We all know the story...",width/2,height/2 -100);
-  // Add Next button
-  NextButton.pos={x:width/2,y:height/2 + 100};
-  NextButton.w=100;
-  NextButton.h=50;
-  NextButton.collider="k";
-  NextButton.color="blue";
-  NextButton.text="Next";
+function showScreen1(){
+  background(bg2);
+  startButton.pos={x:-100, y:-100};
+  // Add skip button
+  skipButton.w=100;
+  skipButton.h=50;
+  skipButton.collider="k";
+  skipButton.color="#0c6b68ff";
+  skipButton.text="Skip Instructions";
 }
