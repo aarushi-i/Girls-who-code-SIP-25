@@ -40,8 +40,7 @@ function draw() {
   // Check start button
   if (startButton.mouse.presses()){
     screen=1;
-  } else if (screen==1){
-    showScreen1()
+    
   }
   
 }
