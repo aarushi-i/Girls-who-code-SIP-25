@@ -1,0 +1,73 @@
+//else if (screen==5){
+//image(bg6,0,0)
+//text("Stars Collected"+starCollect, 20, 20)}
+
+//else if (kb.pressing('space')&& collectStars>0){
+  //star1.visible=true
+ // star1.pos={x:mc.x, y:mc.y}
+ // star1.vel.x=2}
+
+   //stars
+   //if (star1.x>=380){
+  //   star1.visible=false;
+  //   star1.pos={x:-100, y:-100}
+   //} else if (star1.collides(enemy1)){
+   //  enemy1.visible=false;
+   //  enemy1.pos={x:-100, y:-100}
+   //  star1.visible=false;
+   //  star1.pos={x:-100, y:-100}
+  // }
+
+//enemies
+// if (screen==5 && mc.collides(enemy1)){
+//   mc.x=50
+//   enemy1.speed=0
+//   enemy1.pos={x:340,y:300}
+//   star1.pos={x:200, y:300}
+//   star2.pos={x:100,y:340}
+//   star1.visible=true;
+//   star2.visible=true;
+//   star1.speed=0
+//   star2.speed=0
+//   star1.collider='k';
+//   star2.collider='k';
+// }
+
+// function showScreen5(){
+//   // Add skip button
+//   skipButton.x=340
+//   skipButton.y=40
+//   skipButton.w=100;
+//   skipButton.h=35;
+//   skipButton.collider="k";
+//   skipButton.color="#0c6b68ff";
+//   skipButton.text="Skip Instructions";
+//   //Add sprites
+//   ball.visible=true;
+//   mc.visible=true;
+//   //Gate 
+//   gate2.visible=false;
+//   gate2.pos={x:-100, y:-100};
+//   //floor
+//   floor1.visible=true;
+//   floor1.collider='k'
+//   floor1.pos={x:200, y:400}
+//   floor2.visible=false;
+//   floor2.pos={x:-75, y:-380}
+//   floor3.visible=true;
+//   floor3.pos={x:300, y:360}
+//   //stars
+//   star1.pos={x:50, y:200}
+//   star2.pos={x:100,y:340}
+//   star1.visible=true;
+//   star2.visible=true;
+//   star1.speed=0
+//   star2.speed=0
+//   star1.collider='k';
+//   star2.collider='k';
+//   //enemy
+//   enemy1.visible=true;
+//   enemy1.collider='d';
+//   enemy1.pos={x:340, y:300}
+//   enemy1.moveTowards(mc, 1)
+// }
