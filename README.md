@@ -1,5 +1,5 @@
-# Game Jam Starter Code
-This is a place for you to start building your Game Jam Project!
+# Game Jam Project
+This is my project for the Girls Who Code SIP Game Jam
 
 ### Project Requirements
 Your project should:
@@ -22,7 +22,8 @@ You can extend your project further by:
 ###  Attributions
 *If you used any code, ideas, images, or resources from another person or group of people, tell us about it here. Make sure it is in the public domain, has a license that allows you to use it, or is one of your own.
 - Add here if applicable
-
+  Canva was used to make the backgrounds
+  -https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art - the main character
 ---
 
 ## File Overview
